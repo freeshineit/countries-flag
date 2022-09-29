@@ -1,7 +1,7 @@
 {
   "name": "countries-flag",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.0-alpha2",
+  "main": "index.css",
   "license": "MIT",
   "scripts": {
     "build": "gulp"
@@ -11,5 +11,18 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.55.0"
+  },
+  "files": [
+    "./lib"
+  ],
+  "homepage": "https://freeshineit.github.io/countries-flag",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:freeshineit/countries-flag.git",
+    "branch": "main",
+    "platform": "github"
   }
 }
