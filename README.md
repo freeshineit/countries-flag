@@ -25,9 +25,8 @@ CSS
 /* @import 'countries-flag/lib/flags-64.css' */
 
 .flag {
-  /* react-scripts@5.x */
-  background-image: url(countries-flag/lib/flags.png);
-  /* background-image: url(countries-flag/lib/flags-64.png); */
+   /*  download image */
+   background-image: url(./flags.png);
 }
 ```
 
@@ -41,16 +40,8 @@ Sass
 /* @import 'countries-flag/lib/flags-64.css' */
 
 .flag {
-
-   // download image
+   /*  download image */
    background-image: url(./flags.png);
-
-  /*  
-      react-scripts@5.x
-      background-image: url(countries-flag/lib/flags.png);
-  */
- 
-  /* background-image: url(countries-flag/lib/flags-64.png); */
 }
 ```
 
