@@ -20,7 +20,7 @@ function buildStyle() {
 
 function copyAssets() {
   return gulp
-    .src([`${srcDir}/**/*.png`, `${srcDir}/**/*.html`])
+    .src([`${srcDir}/**/*.png`, `${srcDir}/**/*.html`, `${srcDir}/**/*.scss`])
     .pipe(gulp.dest("./lib"))
     .pipe(gulp.dest("./docs"));
 }
