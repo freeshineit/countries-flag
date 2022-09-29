@@ -1,7 +1,7 @@
 {
   "name": "countries-flag",
-  "version": "0.1.0-alpha2",
-  "main": "index.css",
+  "version": "0.1.0",
+  "main": "./lib/index.css",
   "license": "MIT",
   "scripts": {
     "build": "gulp"
@@ -13,7 +13,7 @@
     "sass": "^1.55.0"
   },
   "files": [
-    "./lib"
+    "lib/**/*"
   ],
   "homepage": "https://freeshineit.github.io/countries-flag",
   "publishConfig": {
