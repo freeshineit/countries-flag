@@ -1,0 +1,15 @@
+{
+  "name": "countries-flag",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  }
+}

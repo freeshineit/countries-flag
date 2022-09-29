@@ -1,0 +1,23 @@
+@import "./var.scss";
+
+.flag {
+  display: inline;
+  *zoom: 1;
+  display: inline-block;
+  width: -$offset;
+  height: -$offset;
+  line-height: -$offset;
+  background-image: url(./flags-32.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@each $arr in $countries {
+  $i: index($countries, $arr);
+  @each $c in $arr {
+    $j: index($arr, $c);
+    .flag.flag-#{$c} {
+      background-position: $offset * ($j - 1) $offset * ($i - 1);
+    }
+  }
+}
