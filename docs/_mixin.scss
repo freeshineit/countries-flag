@@ -1,0 +1,83 @@
+@import "./_var.scss";
+
+@mixin mixin-flag {
+  .flag {
+    display: inline;
+    *zoom: 1;
+    display: inline-block;
+    width: -$offset;
+    height: -$offset;
+    line-height: -$offset;
+    // background-image: url(./flags.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mixin-flag-64 {
+  .flag {
+    display: inline;
+    *zoom: 1;
+    display: inline-block;
+    width: -$offset64;
+    height: -$offset64;
+    line-height: -$offset64;
+    // background-image: url(./flags-64.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin mixin-countries-iso {
+  @each $arr in $countries {
+    $i: index($countries, $arr);
+
+    @each $c in $arr {
+      $j: index($arr, $c);
+
+      .flag.flag-#{nth($c, 1)} {
+        background-position: $offset * ($j - 1) $offset * ($i - 1);
+      }
+    }
+  }
+}
+
+@mixin mixin-countries-code {
+  @each $arr in $countries {
+    $i: index($countries, $arr);
+
+    @each $c in $arr {
+      $j: index($arr, $c);
+      .flag.flag-#{nth($c, 2)} {
+        background-position: $offset * ($j - 1) $offset * ($i - 1);
+      }
+    }
+  }
+}
+
+@mixin mixin-countries-iso-64 {
+  @each $arr in $countries {
+    $i: index($countries, $arr);
+
+    @each $c in $arr {
+      $j: index($arr, $c);
+
+      .flag.flag-#{nth($c, 1)} {
+        background-position: $offset64 * ($j - 1) $offset64 * ($i - 1);
+      }
+    }
+  }
+}
+
+@mixin mixin-countries-code-64 {
+  @each $arr in $countries {
+    $i: index($countries, $arr);
+
+    @each $c in $arr {
+      $j: index($arr, $c);
+      .flag.flag-#{nth($c, 2)} {
+        background-position: $offset64 * ($j - 1) $offset64 * ($i - 1);
+      }
+    }
+  }
+}
