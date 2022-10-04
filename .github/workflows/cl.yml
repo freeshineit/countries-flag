@@ -1,4 +1,4 @@
-name: React Lib
+name: Build
 
 on:
   push:
