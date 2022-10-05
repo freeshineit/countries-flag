@@ -65,4 +65,8 @@ HTML
 ```html
     <!-- China flag -->
     <span class='flag flag-cn'></span>
+
+   <!-- support phone code -->
+   <!-- @import 'countries-flag/lib/flags-iso-code.css' or @import 'countries-flag/lib/flags-code.css'-->
+    <span class='flag flag-86'></span>
 ```
