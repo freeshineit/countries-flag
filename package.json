@@ -1,8 +1,14 @@
 {
   "name": "countries-flag",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "./lib/index.css",
   "license": "MIT",
+  "keywords": [
+    "country",
+    "countries",
+    "flag",
+    "countries-flag"
+  ],
   "scripts": {
     "build": "gulp"
   },
