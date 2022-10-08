@@ -15,6 +15,8 @@
 //   (us, uy, uz, va, vc, ve, vg, vi, vn, vu, wf, ws, ye, yt, za, zm),
 //   (zw, nil, nil, nil, nil, nil, nil, nil, nil, xk, nil, nil);
 
+// nil 为空 没有匹配的值
+// 不能设置为null， null在 sass 中有特殊意义
 $countries: (
     (ad, 376),
     (ae, 971),
@@ -300,5 +302,8 @@ $countries: (
     (nil, nil)
   );
 
+// flags.png 每个图标偏移32px
 $offset: -32px;
+
+// flags-64.png 每个图标偏移64px
 $offset64: -64px;
