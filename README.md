@@ -7,6 +7,10 @@ https://freeshineit.github.io/countries-flag/index-code.html
 https://freeshineit.github.io/countries-flag/index-64.html
 
 https://freeshineit.github.io/countries-flag/index-code-64.html
+
+[demo](./docs/index.html)
+
+![demo](demo.png)
 ## Install
 
 With NPM
@@ -31,6 +35,7 @@ CSS
 .flag {
    /*  download image */
    background-image: url(./flags.png);
+   /* background-image: url(./flags-64.png); */
 }
 ```
 
@@ -41,11 +46,12 @@ Sass
 @import 'countries-flag/index.scss';
 
 /* 64px */
-/* @import 'countries-flag/lib/flags-64.css' */
+/* @import 'countries-flag/lib/flags-64.scss' */
 
 .flag {
    /*  download image */
    background-image: url(./flags.png);
+   // background-image: url(./flags-64.png);
 }
 ```
 
@@ -58,6 +64,7 @@ import bg from 'countries-flag/lib/flags.png'
 // ...
 
 <span className="flag flag-cn" style={{backgroundImage: `url(${bg})`}}></span>
+// <span className="flag flag-86" style={{backgroundImage: `url(${bg})`}}></span>
 ```
 
 HTML
