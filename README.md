@@ -1,5 +1,11 @@
 # Countries Flag
 
+![build](https://github.com/freeshineit/countries-flag/workflows/build/badge.svg)
+![Download](https://img.shields.io/npm/dm/countries-flag.svg)
+![Version](https://img.shields.io/npm/v/countries-flag.svg)
+![License](https://img.shields.io/npm/l/countries-flag.svg)
+
+
 https://freeshineit.github.io/countries-flag
 
 https://freeshineit.github.io/countries-flag/index-code.html
