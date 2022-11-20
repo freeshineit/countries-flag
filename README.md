@@ -5,6 +5,8 @@
 ![Version](https://img.shields.io/npm/v/countries-flag.svg)
 ![License](https://img.shields.io/npm/l/countries-flag.svg)
 
+全球各国国旗，支持[国家电话区号](https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E7%94%B5%E8%AF%9D%E5%8C%BA%E5%8F%B7%E5%88%97%E8%A1%A8)和[ISO 3166-1](https://zh.wikipedia.org/zh-hans/%E5%9C%8B%E5%AE%B6%E5%9C%B0%E5%8D%80%E4%BB%A3%E7%A2%BC)
+
 
 https://freeshineit.github.io/countries-flag
 
@@ -39,9 +41,9 @@ CSS
 /* @import 'countries-flag/lib/flags-64.css' */
 
 .flag {
-   /*  download image */
-   background-image: url(./flags.png);
-   /* background-image: url(./flags-64.png); */
+   /* webpack */
+  background-image: url(~countries-flag/lib/flags.png);
+   /* background-image: url(~countries-flag/lib/flags-64.png); */
 }
 ```
 
@@ -55,23 +57,12 @@ Sass
 /* @import 'countries-flag/lib/flags-64.scss' */
 
 .flag {
-   /*  download image */
-   background-image: url(./flags.png);
-   // background-image: url(./flags-64.png);
+   /*  webpack */
+   background-image: url(~countries-flag/lib/flags.png);
+   // background-image: url(~countries-flag/lib/flags-64.png);
 }
 ```
 
-
-Vue/React
-
-```tsx
-import bg from 'countries-flag/lib/flags.png'
-
-// ...
-
-<span className="flag flag-cn" style={{backgroundImage: `url(${bg})`}}></span>
-// <span className="flag flag-86" style={{backgroundImage: `url(${bg})`}}></span>
-```
 
 HTML
 
